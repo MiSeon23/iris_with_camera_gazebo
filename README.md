@@ -8,8 +8,10 @@
 https://dev.px4.io/v1.8.0/kr/ros/mavros_installation.html
 
 
+
 ### gazebo_ros_pkgs install
 http://gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros
+
 
 
 ### Install px4
@@ -49,6 +51,7 @@ $ git submodule sync --recursive
 $ git submodule update --init --recursive
 ```
 
+
 ##### (if your PX4 doesn't work well,) do the following step (recommended)
 ```
 $ mkdir build
@@ -66,7 +69,8 @@ $ cmake ..
 $ make
 ```
 
-##### change Gazebo Path
+
+### change Gazebo Path
 ```
 $ vi ~/.bashrc
 
@@ -86,6 +90,7 @@ $ no_sim=1 make px4_sitl_default gazebo
 
 $ roslaunch gazebo_ros empty_world.launch world_name:=$(pwd)/Tools/sitl_gazebo/worlds/iris.world
 ```
+
 
 ### get camera data by image
 ```
