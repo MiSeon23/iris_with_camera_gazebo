@@ -86,7 +86,7 @@ export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/catkin_ws/src/Firmware/Tools/sit
 $ roscore
 
 $ cd <Firmware>
-$ no_sim=1 make px4_sitl_default gazebo
+$ no_sim=1 make posix_sitl_default gazebo
 
 $ roslaunch gazebo_ros empty_world.launch world_name:=$(pwd)/Tools/sitl_gazebo/worlds/iris.world
 ```
