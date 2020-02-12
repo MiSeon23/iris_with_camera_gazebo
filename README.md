@@ -81,6 +81,16 @@ export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/catkin_ws/src/Firmware/Tools/sit
 ```
 
 
+
+### Add the models
+```
+$ git clone https://github.com/MiSeon23/iris_with_camera_gazebo.git
+$ cd iris_with_camera_gazebo
+$ mv * ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/models
+```
+
+
+
 ### Execute Gazebo by ROS
 ```
 $ roscore
@@ -91,6 +101,8 @@ $ no_sim=1 make posix_sitl_default gazebo
 $ roslaunch gazebo_ros empty_world.launch world_name:=$(pwd)/Tools/sitl_gazebo/worlds/iris.world
 
 you can change launch file or world_name
+
+Then insert iris with d435
 ```
 
 
