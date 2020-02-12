@@ -89,11 +89,15 @@ $ cd <Firmware>
 $ no_sim=1 make posix_sitl_default gazebo
 
 $ roslaunch gazebo_ros empty_world.launch world_name:=$(pwd)/Tools/sitl_gazebo/worlds/iris.world
+
+you can change launch file or world_name
 ```
 
 
 ### get camera data by image
 ```
+check rostopic and run
+$ rostopic list
 $ rosrun image_view image_view image:={topic name}
 ```
 or using rviz
@@ -102,6 +106,6 @@ $ rviz
 
 Change 'Fixed Frame' option to camera_link
 
-Add Cloud2 or Topic
+Add PointCloud2 or Topic
 ```
 reference : http://gazebosim.org/tutorials?tut=ros_depth_camera&cat=connect_ros 
