@@ -106,6 +106,13 @@ Then insert iris with d435
 ```
 
 
+### Error
+if you have a error(gz:simbol locckup error) that occured almost end of the make, you can try the following
+```
+sudo apt upgrade libignition-math2
+```
+
+
 ### get camera data by image
 ```
 check rostopic and run
