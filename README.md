@@ -98,12 +98,15 @@ $ roscore
 $ cd <Firmware>
 $ no_sim=1 make posix_sitl_default gazebo
 
+$ cd <Frimware>
+$ source Tools/setup_gazebo.bash $(pwd) $(pwd)/build/posix_sitl_default
 $ roslaunch gazebo_ros empty_world.launch world_name:=$(pwd)/Tools/sitl_gazebo/worlds/iris.world
 
 you can change launch file or world_name
 
 Then insert iris with d435
 ```
+reference : https://dev.px4.io/v1.8.0/en/simulation/ros_interface.html
 
 
 ### Error
